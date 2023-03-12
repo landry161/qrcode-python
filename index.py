@@ -1,10 +1,14 @@
 import segno
 from qrcode import myqrcode
 
-"""
-price_tag = segno.make("Hello World")
-#scale=dimensions
-price_tag.save("hello-world.png",dark='darkred',light='lightblue',scale=10)
-"""
+#Text
 myQrCode=myqrcode.simpleText("mySauvegardes.png","Hi getting QR Code with python")
-#myQrCode.save()
+
+#Email
+myQrCode=myqrcode.email("myEmail.png","myemail@yahoo.fr","","","Hi","How are you guy, nice to meet you. Can you use this project and share it? Thanks")
+
+#Geolocation
+myQrCode=myqrcode.coordinates("geoCoordinates.png",1.21124,-3.214545)
+
+#Wifi
+myQrCode=myqrcode.wifi("wifi.png","Bbox-FXXXXXX","password","WEP",False)
