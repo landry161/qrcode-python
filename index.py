@@ -1,7 +1,7 @@
 import segno
 from qrcode import myqrcode
 
-#How to use 
+
 #Text
 myQrCode=myqrcode.simpleText("mySauvegardes.png","Hi getting QR Code with python")
 
